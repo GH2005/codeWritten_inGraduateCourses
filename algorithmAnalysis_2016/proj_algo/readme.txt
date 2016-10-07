@@ -21,3 +21,11 @@ Sub-problem 2: in a weighted, balanced and complete bipartite graph, find the mi
 Sub-problem 1 can be solved using Breadth-first search (no need to employ the Dijkstra's Algorithm or the Floyd-Warshall Algorithm), and sub-problem 2 - the Kuhn-Munkres Algorithm.
 
 Overall time complexity: O(S^3).
+
+Reference list:
+[1] "Problem D. Hexagon Game." Code Jam Beta 2008 - Google Code Jam. Google. <https://code.google.com/codejam/contest/32014/dashboard#s=p3>.
+[2] "Bipartite Graph." Wikipedia. Wikimedia Foundation. <https://en.wikipedia.org/wiki/Bipartite_graph>.
+[3] Fengyang0317. "Code Jam Beta 2008." CSDN Blog. <http://blog.csdn.net/fengyang0317/article/details/24106087>.
+[4] "Computing Distances on a Hexagon Network."  <http://52xenos.blogspot.ca/2013/07/hexagon-network.html>.
+[5] Song, Renfei. "Bipartite Matching." <https://www.renfei.org/blog/bipartite-matching.html>.
+[6] “A Summary of bipartite Matching Algorithms.” <http://www.360doc.com/content/11/0718/14/3701281_134273282.shtml>
