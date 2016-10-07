@@ -10,3 +10,6 @@ In the code, the actual method to do this division is treating integers as c-sty
 
 The time complexity of this algorithm is O(nm) that pushes the number of subtractions for getting each quotient digit to the worst case, nine.
 
+
+
+Folder proj_algo: my solution to the Google Code Jam problem "Hexagon Game" as my course project. Plese refer to readme.txt inside the folder.
