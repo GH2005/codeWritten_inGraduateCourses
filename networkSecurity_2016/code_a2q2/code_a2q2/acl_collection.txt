@@ -1,0 +1,69 @@
+ACL 0
+access-list 1 permit 172.16.0.0 0.0.255.255
+interface E0
+ip access-group 1 out
+
+ACL 1
+access-list 2 deny 172.16.4.13 0.0.0.0
+access-list 2 permit 172.16.0.0 0.0.255.255
+interface E0
+ip access-group 2 out
+
+ACL 2
+access-list 3 deny 172.16.4.0 0.0.0.255
+access-list 3 permit 172.16.0.0 0.0.255.255
+interface E0
+ip access-group 3 out
+
+ACL 3
+access-list 101 deny tcp 172.16.0.0 0.0.255.255 172.16.3.0 0.0.0.255 eq 20
+access-list 101 permit ip 172.16.0.0 0.0.255.255 172.16.3.0 0.0.0.255
+interface E0
+ip access-group 101 out
+
+ACL 4
+access-list 102 deny tcp 172.16.4.13 0.0.0.0 172.16.3.0 0.0.0.255 eq 22
+access-list 102 permit ip 172.16.0.0 0.0.255.255 172.16.3.0 0.0.0.255
+interface E0
+ip access-group 102 out
+
+ACL 5
+access-list 1 deny 172.16.20.163  0.0.0.0
+access-list 1 permit any
+interface E0
+ip access-group 1 out
+
+ACL 6
+access-list 1 deny 172.16.80.0  0.0.0.255
+access-list 1 permit any
+interface E0
+ip access-group 1 out
+
+ACL 7
+access-list 101 deny tcp 172.16.50.75  0.0.0.0  172.16.70.2  0.0.0.0 eq 80
+access-list 101 deny tcp 172.16.50.7  0.0.0.0  172.16.70.2  0.0.0.0 eq 80
+access-list 101 permit ip any any
+interface E1
+ip access-group 101 in
+
+ACL 8
+access-list 101 permit tcp 172.16.80.16  0.0.0.0  172.16.40.89  0.0.0.0 eq 23
+access-list 101 deny tcp 172.16.80.0  0.0.0.255  172.16.40.89  0.0.0.0 eq 23
+access-list 101 permit ip any any
+interface E1
+ip access-group 101 in
+
+ACL 9
+access-list 101 permit tcp 172.16.70.5  0.0.0.0  any eq 20
+access-list 101 deny tcp any any eq 20
+acesss-list 101 permit ip any any
+interface s0
+ip access-group 101 in
+
+ACL 10
+access-list 102 deny tcp any any eq 20
+access-list 102 permit ip any any
+interface E0
+ip access-group 102 in
+
+END

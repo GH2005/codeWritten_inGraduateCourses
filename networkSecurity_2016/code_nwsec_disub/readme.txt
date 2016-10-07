@@ -1,0 +1,3 @@
+	Sample input and output files: pt_in_mattrans.txt contains some lines of plain text; keys_mattrans.txt consists of lines of keys, and each of them is used to encrypt one line of plain text respectively. The produced cipher text is stored in ct_mattrans.txt and it reversely serves as an input file for the decryption function of this program. The decrypted text is written into pt_out_mattrans.txt, which should be and is the same with pt_in_mattrans.txt in content.
+	This program requires that the length of a key divide that of the corresponding plain text. In the key file, the first number of a line is the length of the key. Plain text’s maximum length is 200, and cannot contain white-space characters.
+

@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (code_a2q2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  code_nwsec_a2q2.cpp
+d:\documents\workset\nwsec\nwseca2\code_a2q2\code_a2q2\code_a2q2\code_nwsec_a2q2.cpp(183): warning C4018: “<”: 有符号/无符号不匹配
+  code_a2q2.vcxproj -> D:\documents\workset\NWsec\nwseca2\code_a2q2\code_a2q2\Debug\code_nwsec_a2q2.exe
+  code_a2q2.vcxproj -> D:\documents\workset\NWsec\nwseca2\code_a2q2\code_a2q2\Debug\code_nwsec_a2q2.pdb (Partial PDB)

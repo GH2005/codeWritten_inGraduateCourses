@@ -1,0 +1,7 @@
+﻿  disub.cpp
+d:\documents\workset\nwsec\nwseca2\code_nwsec_disub\code_nwsec_disub\disub.cpp(51): warning C4018: “<”: 有符号/无符号不匹配
+d:\documents\workset\nwsec\nwseca2\code_nwsec_disub\code_nwsec_disub\disub.cpp(66): warning C4018: “<”: 有符号/无符号不匹配
+d:\documents\workset\nwsec\nwseca2\code_nwsec_disub\code_nwsec_disub\disub.cpp(134): warning C4018: “<”: 有符号/无符号不匹配
+d:\documents\workset\nwsec\nwseca2\code_nwsec_disub\code_nwsec_disub\disub.cpp(149): warning C4018: “<”: 有符号/无符号不匹配
+  code_nwsec_disub.vcxproj -> D:\documents\workset\NWsec\nwseca2\code_nwsec_disub\Debug\code_nwsec_disub.exe
+  code_nwsec_disub.vcxproj -> D:\documents\workset\NWsec\nwseca2\code_nwsec_disub\Debug\code_nwsec_disub.pdb (Partial PDB)
