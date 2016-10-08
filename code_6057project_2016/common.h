@@ -1,0 +1,3 @@
+#define THREAD_COUNT 100
+#define UNIT_COUNT 2000
+#define SPIN_COUNT 100000
