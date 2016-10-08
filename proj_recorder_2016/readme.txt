@@ -1,5 +1,5 @@
 A team project in course Ubicomp. The topic was "A recorder that teaches people to play".
-proj_recorder.ino is the Arduino code done by me, which can only run on an Arduino board.
+proj_recorder.ino is the Arduino code (basically C code) done by me, which can only run on an Arduino board.
 Our design consisted of a real recorder, LED lights, a pair of gloves, buttons on a breadboard, ab Arduino Uno board, PuTTY application.
 
 The prototype has three modes of use. Different modes satisfy different demands.
