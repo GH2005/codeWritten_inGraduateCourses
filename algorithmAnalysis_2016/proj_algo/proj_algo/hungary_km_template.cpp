@@ -44,7 +44,7 @@ bool DFS(int theLeft) {
 	treeleft[theLeft] = true;
 	for (int i = 0; i < cright; i++) {	// each right node
 		if (treeright[i]) continue;	// only a new right node counts
-		#ifdef KM
+#ifdef KM
 		TYPE t = leftLabel[theLeft] + rightLabel[i] - weight[theLeft][i];
 		if (t == 0) { // it's a prerequisite to be in the equal subgraph
 			treeright[i] = true;
@@ -56,47 +56,47 @@ bool DFS(int theLeft) {
 		else if (d > t) {
 			d = t;
 		}
-		#else
+#else
 		if (weight[theLeft][i] == MIN_INFI) continue;
 		treeright[i] = true;
 		if (maty[i] == -1 || DFS(maty[i])) {
 			maty[i] = theLeft;
 			return true;
 		}
-		#endif
+#endif
 	} // for: each right node
 	// when false is returned, the alternate tree is a full one
 	return false;
 }
 // main routine of the algorithm
 int HKMprocess() { // return count of DFSSucc.
-	#ifdef KM
+#ifdef KM
 	InitLabels();
-	#endif // KM
+#endif // KM
 	InitMatch();
 	int csucc_dfs  = 0;
 	for (int i = 0; i < cleft; i++) { // each left node
 		memset(treeleft, 0, sizeof(treeleft));
 		memset(treeright, 0, sizeof(treeright));
-		#ifdef KM
+#ifdef KM
 		d = MAX_INFI;
 		while (!DFS(i)) {
 			// update labels.
-            for (int j = 0; j < cleft; j++) {
-                if (!treeleft[j]) continue;
-                leftLabel[j] -= d;
-            }
-            for (int k = 0; k < cright; k++) {
+      for (int j = 0; j < cleft; j++) {
+        if (!treeleft[j]) continue;
+        leftLabel[j] -= d;
+      }
+      for (int k = 0; k < cright; k++) {
 				if (!treeright[k]) continue;
-                rightLabel[k] += d;
-            }
+        rightLabel[k] += d;
+      }
 			d = MAX_INFI;
 			memset(treeleft, 0, sizeof(treeleft));
 			memset(treeright, 0, sizeof(treeright));
-        }
-        #else
-        if (DFS(i)) csucc_dfs++;
-        #endif
+    }
+#else
+    if (DFS(i)) csucc_dfs++;
+#endif
 	}
 	return csucc_dfs;
 }
